@@ -12,6 +12,9 @@ defined('SITE_ROOT') ? NULL : define('SITE_ROOT', 'http://localhost/ProRedCi'.DS
 // Dirección de los includes
 defined('LIB_PATH') ? null : define('LIB_PATH', SERVER_ROOT.'includes'.DS);
 
+//
+defined('PUBLIC_PATH') ? null : define('PUBLIC_PATH', SERVER_ROOT.'public'.DS);
+
 // Dirección de los controladores
 defined('CONTROLLER_PATH') ? NULL : define('CONTROLLER_PATH', LIB_PATH.'controllers' . DS);
 
@@ -19,7 +22,7 @@ defined('CONTROLLER_PATH') ? NULL : define('CONTROLLER_PATH', LIB_PATH.'controll
 defined('MODEL_PATH') ? NULL : define('MODEL_PATH', LIB_PATH.'models' . DS);
 
 // Controladores
-require_once(CONTROLLER_PATH.'router.php');
+
 
 
 
