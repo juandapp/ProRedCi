@@ -11,6 +11,7 @@ defined('LIB_PATH') ? null : define('LIB_PATH', SITE_ROOT.'includes'.DS);
 define('SERVER_ROOT' , '/var/www/WEB_ROOT_FOLDER');
 
 
+
 defined('DATA_PATH') ? NULL : define('DATA_PATH', LIB_PATH.DS.'data' . DS);
 defined('MODEL_PATH') ? NULL : define('MODEL_PATH', LIB_PATH.DS.'model' . DS);
 defined('VIEW_PATH') ? NULL : define('VIEW_PATH', LIB_PATH.DS.'view' . DS);
