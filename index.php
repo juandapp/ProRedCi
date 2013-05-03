@@ -1,13 +1,4 @@
-<?php require_once('includes/initialize.php'); ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php
-            
-        ?>
-    </body>
-</html>
+<?php
+require_once('includes/initialize.php');
+require_once(CONTROLLER_PATH . 'router.php');
+?>
