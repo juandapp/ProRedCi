@@ -14,7 +14,10 @@ defined('LIB_PATH') ? null : define('LIB_PATH', SERVER_ROOT.'includes'.DS);
 
 // Dirección de los controladores
 defined('CONTROLLER_PATH') ? NULL : define('CONTROLLER_PATH', LIB_PATH.'controllers' . DS);
-echo CONTROLLER_PATH;
+
+// Dirección de los modelos
+defined('MODEL_PATH') ? NULL : define('MODEL_PATH', LIB_PATH.'models' . DS);
+
 // Controladores
 require_once(CONTROLLER_PATH.'router.php');
 
