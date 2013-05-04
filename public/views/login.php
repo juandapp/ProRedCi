@@ -12,7 +12,7 @@
         <nav id="mainMenu">
             <div class="menu">
 
-                <a class="navIcon" href="../index.php"><img title="Index" alt="Index" src="images/home.png" width="22" height="22"/></a>
+                <a class="navIcon" href="../index.php"><img title="Index" alt="Index" src="public/images/home.png" width="22" height="22"/></a>
 
                 <div class="navVerticalDivision"></div>
 
