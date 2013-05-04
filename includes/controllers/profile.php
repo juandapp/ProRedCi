@@ -15,9 +15,13 @@ class Profile_Controller {
             $database = new MySQLDatabase();
             $value = User_Model::find_by_id($database, $session->user_id)->name;
             $database->close_connection();
-
+            $numPost = "10";
+            $fechaCreacion = "20 Mayo";
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
+            $view->assign('fechaCreacion', $fechaCreacion);
+            $view->assign('numPost', $numPost);
+
         } else if (isset($getVars['logout'])) {
             $session = new Session();
             $session->logout();
