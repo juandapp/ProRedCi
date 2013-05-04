@@ -27,6 +27,10 @@ $parsed = explode('&', $request);
 // Obtener la página
 $page = array_shift($parsed);
 
+if (empty($page)) {
+    header("Location: index.php?login");
+}
+
 // Los siguientes argumentos del arreglo son variables enviadas por GET
 $getVars = array();
 foreach ($parsed as $argument) {
