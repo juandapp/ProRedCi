@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel='stylesheet' href="public/stylesheets/style.css">
-        <link rel='stylesheet' href="public/stylesheets/profile.css">
+        <link rel='stylesheet' href="public/stylesheets/createPost.css">
         <script type="text/javascript" src="/javascripts/user.js"></script>
     </head>
     <body>
@@ -32,6 +32,7 @@
 
             </div>
         </nav>
+
         <div id="wrapper">
             <section id="main">
 
@@ -39,7 +40,7 @@
 
                     <div id="avatar">
 
-                        <h2><?php echo $data['nombre']; ?>  </h2>				<!-- seek with php-->
+                        <h2><?php echo $data['nombre']; ?> </h2>				<!-- seek with php-->
                         <br/>
                         <span class="avatarImage" >
                             <img src="../images/user.png">
@@ -51,9 +52,9 @@
                     <div id="userOptions">
 
                         <h3>Num. Posts</h3>
-                        <p><?php echo $data['numPost']; ?></p>					<!-- seek with php-->
+                        <p>xxxxxxx</p>					<!-- seek with php-->
                         <h3>Fecha de Creaci&oacute;n</h3>
-                        <p><?php echo $data['fechaCreacion']; ?></p>				<!-- seek with php-->
+                        <p>xx-xx-xxxx</p>				<!-- seek with php-->
                         <br/>
                         <div>
                             <input type="submit" value="Editar Perfil" />
@@ -65,50 +66,36 @@
 
 
 
-                <article class="posts">
+                <div class="postTitle">
+                    <div id = "titleSection">
 
-                    <h2>Posts</h2>
+                        <h4>Etiquetas</h4>
+                        <input type="text" class="input" id="name" placeholder="">
 
-                    <nav>
-                        <div class="menu">
+                        <h4>Titulo del post</h4>
+                        <input type="text" class="input" size="60" title="Título" dir="ltr">
 
-                            <ul>
+                    </div>
 
-                                <li><a href="#">Fecha</a>
+                    <div class="titleSeparator"></div>
 
-                                    <ul>
-                                        <li><a href="#">Up-Down</a></li>
-                                        <li><a href="#">Down-Up</a></li>
-                                    </ul>
-
-                                </li>
-
-                                <li><a href="#">Rating</a></li>
-
-                                <li><a href="#">Visitas</a></li>
-
-                            </ul>
-
-                        </div>
-                    </nav>
+                    <div id = "userInformation">
+                        <button class="" tabindex="0">Publicar</button>
+                    </div>
+                </div>
 
 
-                    <div id="postList">
+                <article class="postContent">
 
+                    <textarea class="textArea" id="message" placeholder="..."></textarea>
 
-
-                    </div><!-- post list -->
-
-
-                </article><!-- posts -->
+                </article>
 
 
 
                 <aside id="createPost">
                     <div>
-                        <form action="index.php?proceso" method="post">
                         <input type="submit" value="Crear Post" />
-                        </form>
                     </div>
                 </aside><!-- Crear Post -->
 
