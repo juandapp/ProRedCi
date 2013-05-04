@@ -26,7 +26,7 @@
 
                     <div class="navVerticalDivision"></div>
 
-                    <a class="navIcon" href="index.php?profile"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
+                    <a class="navIcon" href="index.php?profile&logout"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
 
                 </div>
 

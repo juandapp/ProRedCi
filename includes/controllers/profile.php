@@ -9,8 +9,8 @@ class Profile_Controller {
     public function main(array $getVars) {
 
         if (empty($getVars)) {
-            //create a new view and pass it our template
-            // si no vienen parametros en el GET se muestra la vista
+    //create a new view and pass it our template
+    // si no vienen parametros en el GET se muestra la vista
             $session = new Session();
             $database = new MySQLDatabase();
             $value = User_Model::find_by_id($database, $session->user_id)->name;
@@ -18,11 +18,13 @@ class Profile_Controller {
 
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
+        } else if (isset($getVars['logout'])) {
+            $session = new Session();
+            $session->logout();
+            header("Location: index.php?login");
         } else if (isset($getVars['usernameajax'])) {
             
         }
     }
-
 }
-
 ?>
