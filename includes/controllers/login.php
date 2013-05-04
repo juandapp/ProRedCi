@@ -13,11 +13,12 @@ class Login_Controller {
             // si no vienen parametros en el GET se muestra la vista
             $session = new Session();
             if ($session->is_logged_in()) {
-                header("Location: index.php?registro");
+                header("Location: index.php?profile");
             } else {
                 $view = new View_Model($this->template);
             }
-        } else if (isset($getVars['singin'])) {
+            
+        }else if (isset($getVars['singin'])) {
 
             $username = trim($_POST['username']);
             $password = trim($_POST['password']);

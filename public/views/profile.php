@@ -1,8 +1,8 @@
 <html>
     <head>
-        <link rel='stylesheet' href="../stylesheets/style.css">
-        <link rel='stylesheet' href="../stylesheets/profile.css">
-        <script type="text/javascript" src="../javascripts/user.js"></script>
+        <link rel='stylesheet' href="public/stylesheets/style.css">
+        <link rel='stylesheet' href="public/stylesheets/profile.css">
+        <script type="text/javascript" src="/javascripts/user.js"></script>
     </head>
     <body>
 

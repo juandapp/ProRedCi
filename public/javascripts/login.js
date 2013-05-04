@@ -4,10 +4,9 @@ $(document).ready(function() {
             if(msg == "valido"){
                 console.log(msg);
                 $("#loginform").clearForm();
-                window.location.replace("index.php?registro");
+                window.location.replace("index.php?profile");
             }else{
-                console.log(msg);
-//                        
+                console.log(msg);      
                 $("#errorlogin").text("No Valido");
                 
             }
