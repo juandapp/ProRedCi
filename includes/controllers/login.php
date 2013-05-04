@@ -2,17 +2,11 @@
 
 class Login_Controller {
 
-    public $template = 'users';
+    public $template = 'login';
 
     public function main(array $getVars) {
-        print "We are in news!";
-        print '<br/>';
-        $vars = print_r($getVars, TRUE);
-        print
-                (
-                "The following GET vars were passed to this controller:" .
-                "<pre>" . $vars . "</pre>"
-        );
+        //create a new view and pass it our template
+        $view = new View_Model($this->template);
     }
 
 }

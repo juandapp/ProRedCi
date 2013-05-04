@@ -1,5 +1,23 @@
 <?php
 
+//Automatically includes files containing classes that are called
+function __autoload($className) {
+    //parse out filename where class should be located
+    list($filename, $suffix) = explode('_', $className);
+
+    //compose file name
+    $file = MODEL_PATH . strtolower($filename) . '.php';
+
+    //fetch file
+    if (file_exists($file)) {
+        //get file
+        include_once($file);
+    } else {
+        //file does not exist!
+        die("File '$filename' containing class '$className' not found.");
+    }
+}
+
 // Obtener la cadena de consulta del URL
 $request = $_SERVER['QUERY_STRING'];
 
@@ -14,8 +32,12 @@ $getVars = array();
 foreach ($parsed as $argument) {
     // Dividir la variables GET por medio del '=' para separar las 
     // variables de los valores
-    list($variable, $value) = explode('=', $argument);
-    $getVars[$variable] = $value;
+    if (strpos($argument, '=')) {
+        list($variable, $value) = explode('=', $argument);
+        $getVars[$variable] = $value;
+    } else {
+        $getVars[$argument] = 1;
+    }
 }
 
 //compute the path to the file

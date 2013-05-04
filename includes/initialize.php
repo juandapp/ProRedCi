@@ -21,6 +21,9 @@ defined('CONTROLLER_PATH') ? NULL : define('CONTROLLER_PATH', LIB_PATH.'controll
 // Dirección de los modelos
 defined('MODEL_PATH') ? NULL : define('MODEL_PATH', LIB_PATH.'models' . DS);
 
+// Dirección de los controladores
+defined('VIEW_PATH') ? NULL : define('VIEW_PATH', PUBLIC_PATH.'views' . DS);
+
 // Controladores
 
 

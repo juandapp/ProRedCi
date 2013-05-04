@@ -1,11 +1,17 @@
-<html>
 
+
+<html>
     <head>
         <title> The Process Network </title>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/login.css">
-    </head> 
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        <script src="public/javascripts/registro.js"></script>
+
+    </head>
     <body>
+
         <nav id="mainMenu">
             <div class="menu">
 
@@ -27,32 +33,38 @@
                 </ul>
             </div>
         </nav>
-
-
-        <header>
-            <div id="banner">
-                <h1>The Process Network</h1>
-            </div>
-        </header>
-
         <div id="wrapper">
             <section id="main">
 
-                <aside id="login" class="login">
-                    <form action=../includes/controller/user.controller.php method="post">
-                        <h3>Login</h3>
+                <article id="register" class="login">
+                    <form action=../../includes/controller/user.controller.php method="post">
+                        <h3>Registro</h3>
                         <div>
-                            <input type="text" placeholder="Usuario" required="" name="username" id="username" />
+                            <p id="labelNombre">Nombres</p>
+                            <input type="text" required="" name="name" id="name" />
+                        </div>
+
+                        <div>
+                            <p>Apellidos</p>
+                            <input type="text" required="" name="lastname" id="lastname" />
                         </div>
                         <div>
+                            <p>e-mail</p>
+                            <input type="text" placeholder="example@example.com" required="" name="email" id="email" />
+                        </div>
+                        <div id="divUsername">
+                            <p>Nick de usuario</p>
+                            <input type="text" required="" name="username" id="username" />
+                        </div>
+                        <div>
+                            <p>Contrase&ntilde;a</p>
                             <input type="password" placeholder="Password" required="" name="password" id="password" />
                         </div>
                         <div>
-                            <input type="submit" value="Login" name="login" />
+                            <input type="submit" value="Registrarse" name="register" />
                         </div>
                     </form>
-                    <a href="index.php?registro">si no tienes cuenta, registrate :D</a>
-                </aside>
+                </article>
             </section>
         </div>
 
@@ -63,3 +75,6 @@
         </footer>
     </body>
 </html>
+
+
+
