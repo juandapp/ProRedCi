@@ -37,7 +37,7 @@
             <section id="main">
 
                 <article id="register" class="login">
-                    <form action=../../includes/controller/user.controller.php method="post">
+                    <form action="index.php?registro&registrar" method="post">
                         <h3>Registro</h3>
                         <div>
                             <p id="labelNombre">Nombres</p>

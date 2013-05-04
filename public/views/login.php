@@ -39,7 +39,7 @@
             <section id="main">
 
                 <aside id="login" class="login">
-                    <form action=../includes/controller/user.controller.php method="post">
+                    <form action="index.php?login&singin" method="post">
                         <h3>Login</h3>
                         <div>
                             <input type="text" placeholder="Usuario" required="" name="username" id="username" />

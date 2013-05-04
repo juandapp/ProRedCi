@@ -24,10 +24,7 @@ defined('MODEL_PATH') ? NULL : define('MODEL_PATH', LIB_PATH.'models' . DS);
 // Dirección de los controladores
 defined('VIEW_PATH') ? NULL : define('VIEW_PATH', PUBLIC_PATH.'views' . DS);
 
-// Controladores
-
-
-
-
+// Configuración
+require_once(MODEL_PATH . 'mysqldatabase.php');
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-class User {
+class User_Model {
 
     private $idUser;
     private $username;
@@ -26,15 +26,13 @@ class User {
         return $this->$name;
     }
 
-    public function save() {
-        global $database;
+    public function save($database) {
         $sql = "INSERT INTO user (name , last_name, email, username, password) VALUES ";
         $sql .= "('" . $this->name . "','" . $this->last_name . "','" . $this->email . "','" . $this->username . "','" . $this->password . "')";
         $result_set = $database->query($sql);
     }
 
-    public static function authenticate($username = "", $password = "") {
-        global $database;
+    public static function authenticate($database, $username = "", $password = "") {
         $username = $database->escape_value($username);
         $password = $database->escape_value($password);
 
@@ -42,22 +40,21 @@ class User {
         $sql .= "WHERE username = '{$username}' ";
         $sql .= "AND password = '{$password}' ";
         $sql .= "LIMIT 1";
-        $result_array = self::find_by_sql($sql);
+        $result_array = self::find_by_sql($database, $sql);
         return !empty($result_array) ? array_shift($result_array) : false;
     }
 
-    public static function find_by_id($id = 0) {
-        $result_array = self::find_by_sql("SELECT * FROM user WHERE idUser={$id} LIMIT 1");
+    public static function find_by_id($database, $id = 0) {
+        $result_array = self::find_by_sql($database, "SELECT * FROM user WHERE idUser={$id} LIMIT 1");
         return !empty($result_array) ? array_shift($result_array) : false;
     }
     
-     public static function find_by_username($username = 0) {
-        $result_array = self::find_by_sql("SELECT * FROM user WHERE username='{$username}' LIMIT 1");
+     public static function find_by_username($database, $username = 0) {
+        $result_array = self::find_by_sql($database, "SELECT * FROM user WHERE username='{$username}' LIMIT 1");
         return !empty($result_array) ? array_shift($result_array) : false;
     }
 
-    public static function find_by_sql($sql = "") {
-        global $database;
+    public static function find_by_sql($database, $sql = "") {
         $result_set = $database->query($sql);
         $object_array = array();
         while ($row = $database->fetch_array($result_set)) {
