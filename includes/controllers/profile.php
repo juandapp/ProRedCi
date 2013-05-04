@@ -1,5 +1,4 @@
 <?php
-
 class Profile_Controller {
 
     public $template = 'profile';
@@ -17,5 +16,4 @@ class Profile_Controller {
         }
     }
 }
-
 ?>
