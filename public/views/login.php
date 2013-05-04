@@ -4,6 +4,9 @@
         <title> The Process Network </title>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/login.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+        <script src="http://malsup.github.com/jquery.form.js"></script> 
+        <script src="public/javascripts/login.js"></script> 
     </head> 
     <body>
         <nav id="mainMenu">
@@ -39,7 +42,7 @@
             <section id="main">
 
                 <aside id="login" class="login">
-                    <form action="index.php?login&singin" method="post">
+                    <form id="loginform" action="index.php?login&singin" method="post">
                         <h3>Login</h3>
                         <div>
                             <input type="text" placeholder="Usuario" required="" name="username" id="username" />
@@ -51,6 +54,7 @@
                             <input type="submit" value="Login" name="login" />
                         </div>
                     </form>
+                    <p id="errorlogin"></p>
                     <a href="index.php?registro">si no tienes cuenta, registrate :D</a>
                 </aside>
             </section>

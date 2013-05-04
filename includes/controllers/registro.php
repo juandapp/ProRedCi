@@ -1,6 +1,6 @@
 <?php
 
-
+require_once(CONTROLLER_PATH . "session.php");
 
 class Registro_Controller {
 
