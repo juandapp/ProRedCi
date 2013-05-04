@@ -1,4 +1,7 @@
 <?php
+
+require_once(CONTROLLER_PATH . "session.php");
+
 class Profile_Controller {
 
     public $template = 'profile';
@@ -8,12 +11,18 @@ class Profile_Controller {
         if (empty($getVars)) {
             //create a new view and pass it our template
             // si no vienen parametros en el GET se muestra la vista
-            $value = "gustavo";
+            $session = new Session();
+            $database = new MySQLDatabase();
+            $value = User_Model::find_by_id($database, $session->user_id)->name;
+            $database->close_connection();
+
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
         } else if (isset($getVars['usernameajax'])) {
             
         }
     }
+
 }
+
 ?>
