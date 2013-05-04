@@ -1,5 +1,4 @@
 <?php
-
 class Proceso_Controller {
 
     public $template = 'proceso';
@@ -17,5 +16,4 @@ class Proceso_Controller {
         }
     }
 }
-
 ?>
