@@ -82,7 +82,7 @@ class User_Model {
     }
 
     public static function find_number_post($database, $userId) {
-        $result_array = self::find_by_sql($database, "SELECT * FROM proces WHERE user_idUser={$userId}");
+        $result_array = self::find_by_sql($database, "SELECT * FROM process WHERE user_idUser={$userId}");
         $arrayshift = array_shift($result_array);
         
         $conteo = count($arrayshift);
