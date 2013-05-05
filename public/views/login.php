@@ -6,7 +6,17 @@
         <link rel='stylesheet' href="public/stylesheets/login.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
         <script src="http://malsup.github.com/jquery.form.js"></script> 
-        <script src="public/javascripts/login.js"></script> 
+        <script src="public/javascripts/login.js"></script>
+
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+        <script>
+            $(function() {
+                $("#dialog").dialog();
+            });
+        </script>
     </head> 
     <body>
         <nav id="mainMenu">
@@ -32,7 +42,7 @@
         </nav>
 
 
-        <header>
+        <header id="indexHeader">
             <div id="banner">
                 <h1>The Process Network</h1>
             </div>
@@ -54,11 +64,36 @@
                             <input type="submit" value="Login" name="login" />
                         </div>
                     </form>
-                    <p id="errorlogin"></p>
-                    <a href="index.php?registro">si no tienes cuenta, registrate :D</a>
-                </aside>
-            </section>
-        </div>
+                    <a href="index.php?registro">si no tienes cuenta, registrate \(^.^)/</a>
+                </aside><!-- close login -->
+
+                <article>
+
+                    <h2>Informate</h2>
+                    <div class="listInformacion">
+                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <p>pequenia descripcion acerca del problema</p>
+                    </div>
+                    <div class="listInformacion">
+                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <p>pequenia descripcion acerca del problema</p>
+                    </div>
+                    <div class="listInformacion">
+                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <p>pequenia descripcion acerca del problema</p>
+                    </div>
+                    <div class="listInformacion">
+                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <p>pequenia descripcion acerca del problema</p>
+                    </div>
+                    <div class="listInformacion">
+                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <p>pequenia descripcion acerca del problema</p>
+                    </div>
+                </article>
+
+            </section><!-- close main -->
+        </div><!-- close Wrapper -->
 
         <footer>
             <div id="footerContent">

@@ -14,7 +14,6 @@ class Profile_Controller {
             $session = new Session();
             $database = new MySQLDatabase();
             $value = User_Model::find_by_id($database, $session->user_id)->name;
-            
             $numPost = User_Model::find_number_post($database, $session->user_id);
             $fechaCreacion = User_Model::find_by_id($database, $session->user_id)->creation_date;
             $fechaCreacionFormato = date("d-m-Y", strtotime(stripslashes($fechaCreacion)));
