@@ -18,7 +18,7 @@
             });
 
         </script>
-    </head> 
+    </head>
     <body>
         <nav id="mainMenu">
             <div class="menu">
