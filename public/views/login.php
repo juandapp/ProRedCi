@@ -45,7 +45,7 @@
 
         <header id="indexHeader">
             <div id="banner">
-                <h1>Tramit&aacute;lo...</h1>
+                <h1>Tramitalo...</h1>
                 <h4>un portal para la construcci&oacute;n de un conocimiento colectivo <br/>
                     en tramites administrativos, judiciales, comerciales, economicos y sociales<br/>
                     de la ciudad</h4>   
@@ -82,7 +82,7 @@
                 </article>
                 
                 <article class="loginArticle"><!-- Tops -->
-                    <h2>Top 5</h2>
+                    <h2>Top 5 de de los m&aacute;s valorados</h2>
                     <div id="accordion">
                         <h4><?php echo $data['PostName1']; ?><samp class="likes">
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost1']; ?></p></samp>

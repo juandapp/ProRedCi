@@ -38,9 +38,8 @@ $(document).ready(function()
                     type: "post"
                 }
 
-        ).done(function(msg) {
-            $("#tituloproceso").prop('disabled', true);
-            console.log(msg);
+        ).done(function() {
+            window.location.replace("index.php?profile");
         });
 
     });
