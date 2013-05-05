@@ -30,7 +30,7 @@ form:after {
     box-shadow: 0 1px 0 #fff inset;
     border: 1px solid #c4c6ca;
     margin: 0 auto;
-    padding: 25px 0 0;
+    padding: 25px 0 25 0;
     position: relative;
     text-align: center;
     text-shadow: 0 1px 0 #fff;
@@ -264,5 +264,19 @@ form:after {
     line-height: 20px;
     padding: 5px 2px;
     
+}
+
+
+.listInformacion {
+    margin: 2px;
+    padding: 2px 5px ;
+    border-radius: 3px;
+    background-color: #F1F1F1;
+    
+}
+
+
+.listInformacion:hover {
+    background-color: #CCC;
 }
 

@@ -76,6 +76,20 @@ header {
 }
 
 
+#indexHeader {
+	width: 100%;
+	background-color: #FFF;
+	height: 420px;
+	border-bottom: 1px solid #D1D1D1;
+	
+	margin: 0 auto;
+	background-image:url('../images/banner.png');
+	background-repeat:no-repeat;
+	background-position: top;
+        background-size: 100%;
+}
+
+
 #banner{
 	width:1000px;
 	margin: 0 auto;

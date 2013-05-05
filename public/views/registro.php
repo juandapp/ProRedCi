@@ -33,6 +33,8 @@
                 </ul>
             </div>
         </nav>
+        
+        
         <div id="wrapper">
             <section id="main">
 
@@ -40,33 +42,33 @@
                     <form action="index.php?registro&registrar" method="post">
                         <h3>Registro</h3>
                         <div>
-                            <p id="labelNombre">Nombres</p>
+                            <h5 id="labelNombre">Nombres</h5>
                             <input type="text" required="" name="name" id="name" />
                         </div>
 
                         <div>
-                            <p>Apellidos</p>
+                            <h5>Apellidos</h5>
                             <input type="text" required="" name="lastname" id="lastname" />
                         </div>
                         <div>
-                            <p>e-mail</p>
+                            <h5>e-mail</h5>
                             <input type="text" placeholder="example@example.com" required="" name="email" id="email" />
                         </div>
                         <div id="divUsername">
-                            <p>Nick de usuario</p>
+                            <h5>Nick de usuario</h5>
                             <input type="text" required="" name="username" id="username" />
                         </div>
                         <div>
-                            <p>Contrase&ntilde;a</p>
+                            <h5>Contrase&ntilde;a</h5>
                             <input type="password" placeholder="Password" required="" name="password" id="password" />
                         </div>
                         <div>
                             <input type="submit" value="Registrarse" name="register" />
                         </div>
                     </form>
-                </article>
-            </section>
-        </div>
+                </article><!-- close register -->
+            </section><!-- close main -->
+        </div><!-- close wrapper -->
 
         <footer>
             <div id="footerContent">
