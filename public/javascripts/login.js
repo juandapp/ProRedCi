@@ -1,5 +1,6 @@
 $(document).ready(function() {
-console.log("msg");
+
+
     $("#loginform").ajaxForm({success: function(msg) {
             if(msg == "valido"){
                 console.log(msg);
@@ -7,8 +8,12 @@ console.log("msg");
                 window.location.replace("index.php?profile");
             }else{
                 console.log(msg);      
-                $("#errorlogin").text("No Valido");
-                
+                $("#errorlogin").text("No Valido");                
             }
         }});
+    
+    
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
 });

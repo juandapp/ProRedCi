@@ -10,13 +10,13 @@
         <script src="http://malsup.github.com/jquery.form.js"></script>  
         <script src="public/javascripts/login.js"></script>
 
-        
+
 
         <script>
             $(function() {
                 $("#dialog").dialog();
             });
-            
+
         </script>
     </head> 
     <body>
@@ -70,27 +70,20 @@
                 </aside><!-- close login -->
 
                 <article>
-
                     <h2>Informate</h2>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
+                    <div id="accordion">
+                        <h3>First header</h3>
+                        <div> </div>
+                        <h3>Second header</h3>
+                        <div>Second content panel</div>
+                         <h3>First header</h3>
+                        <div>First content panel</div>
+                        <h3>Second header</h3>
+                        <div>Second content panel</div>
+                         <h3>First header</h3>
+                        <div>First content panel</div>
+                        <h3>Second header</h3>
+                        <div>Second content panel</div>
                     </div>
                 </article>
 
