@@ -148,7 +148,7 @@ form:after {
     transition: all 0.5s ease;
     border: 1px solid #c8c8c8;
     color: #777;
-    font: 13px Helvetica, Arial, sans-serif;
+    font: 13px Verdana, Arial, sans-serif;
     margin: 0 0 10px;
     padding: 15px 10px 15px 40px;
     width: 80%;
@@ -194,7 +194,7 @@ form:after {
     color: #85592e;
     cursor: pointer;
     float: left;
-    font: bold 15px Helvetica, Arial, sans-serif;
+    font: bold 15px Verdana, Arial, sans-serif; 
     height: 35px;
     margin: 20px 0 35px 15px;
     position: relative;

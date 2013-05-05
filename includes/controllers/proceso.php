@@ -18,8 +18,6 @@ class Proceso_Controller {
             $fechaCreacion = User_Model::find_by_id($database, $session->user_id)->creation_date;
             $fechaCreacionFormato = date("d-F-Y", strtotime(stripslashes($fechaCreacion)));
 
-            
-
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
             $view->assign('fechaCreacion', $fechaCreacionFormato);

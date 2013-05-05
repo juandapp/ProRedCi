@@ -65,6 +65,8 @@ header {
 	background-color: #FFF;
 	height: 300px;
 	border-bottom: 1px solid #D1D1D1;
+        
+        box-shadow: 0 10px 10px rgba(50, 50, 50, 0.3);
 }
 
 
@@ -144,7 +146,7 @@ header {
 	margin-right: -10px;
 	text-decoration: none;
 	color: #222;
-	font: bold 15px Helvetica, Arial, sans-serif;
+	font: bold 15px Verdana, Arial, sans-serif;  
 }
 
 
@@ -160,7 +162,7 @@ header {
 	padding: 4px 0px;
 	text-decoration: none;
 	color: #222;
-	font: bold 15px Helvetica, Arial, sans-serif;
+	font: bold 15px Verdana, Arial, sans-serif;  
 }
 
 
@@ -195,7 +197,7 @@ header {
 	text-decoration: none;
 	padding: 15px;
 	color: #222;
-	font: 15px sans-serif;
+	font: 15px Verdana, Arial, sans-serif;  
 	text-shadow: 0px 1px 1px rgba(0,0,0, .3) inset;
 	
 }
@@ -225,7 +227,7 @@ header {
 	width: 180px;
 	margin-left: -50px;
 	top: 30px;
-	font: bold 12px sans-serif;
+	font: bold 12px Verdana, Arial, sans-serif;  
 
 	/* Show Hide */
 	max-height: 0px;
@@ -326,7 +328,7 @@ article {
 #search input[type="text"] {
     background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
     border: 1px solid #d1d1d1;
-    font: bold 12px Arial,Helvetica,Sans-serif;
+    font: bold 12px Verdana, Arial, sans-serif;  
     color: #bbb;
     width: 150px;
     padding: 6px 15px 6px 35px;
