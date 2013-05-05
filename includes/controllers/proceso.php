@@ -1,5 +1,4 @@
 <?php
-
 class Proceso_Controller {
 
     public $template = 'proceso';
@@ -9,7 +8,7 @@ class Proceso_Controller {
         if (empty($getVars)) {
             //create a new view and pass it our template
             // si no vienen parametros en el GET se muestra la vista
-            $value = "gustavo";
+            $value = "XXXXXXXXX";
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
         } else if (isset($getVars['usernameajax'])) {
@@ -17,5 +16,4 @@ class Proceso_Controller {
         }
     }
 }
-
 ?>

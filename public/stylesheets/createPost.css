@@ -19,6 +19,16 @@ textarea {
 	line-height: 100%;  
 }
 
+.postContent {
+    width: 50%;
+}
+
+
+.actividadMain {
+    width: 100%;
+    max-width: 70%;
+}
+
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
@@ -43,3 +53,4 @@ input:focus, textarea:focus {
 	-moz-border-radius: 5px;  
 	-webkit-border-radius: 5px;  
 }
+
