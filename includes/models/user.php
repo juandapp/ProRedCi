@@ -10,7 +10,7 @@ class User_Model {
     private $last_name;
     private $creation_date;
 
-      public function __construct($name = "", $last_name= "", $email= "", $username= "", $password= "") {
+    public function __construct($name = "", $last_name = "", $email = "", $username = "", $password = "") {
         $this->username = $username;
         $this->password = $password;
         $this->name = $name;
@@ -48,8 +48,8 @@ class User_Model {
         $result_array = self::find_by_sql($database, "SELECT * FROM user WHERE idUser={$id} LIMIT 1");
         return !empty($result_array) ? array_shift($result_array) : false;
     }
-    
-     public static function find_by_username($database, $username = 0) {
+
+    public static function find_by_username($database, $username = 0) {
         $result_array = self::find_by_sql($database, "SELECT * FROM user WHERE username='{$username}' LIMIT 1");
         return !empty($result_array) ? array_shift($result_array) : false;
     }
@@ -79,6 +79,14 @@ class User_Model {
         // We don't care about the value, we just want to know if the key exists
         // Will return true or false
         return array_key_exists($attribute, $object_vars);
+    }
+
+    public static function find_number_post($database, $userId) {
+        $result_array = self::find_by_sql($database, "SELECT * FROM proces WHERE user_idUser={$userId}");
+        $arrayshift = array_shift($result_array);
+        
+        $conteo = count($arrayshift);
+        return ($conteo >= 0) ? $conteo : 0;
     }
 
 }
