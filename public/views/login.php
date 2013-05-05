@@ -33,19 +33,14 @@
                     </form>
                 </div>
 
-                <ul class="navRightItem">
-
-                    <li class="navIcon"> <a href="about.html">About</a></li>
-                    <li class="navIcon"> <a href="#">Contact</a> </li>
-
-                </ul>
+                
             </div>
         </nav>
 
 
         <header id="indexHeader">
             <div id="banner">
-                <h1>The Process Network</h1>
+                <h1>tram&iacute;telo</h1>
             </div>
         </header>
 

@@ -94,11 +94,14 @@
                     <textarea class="textArea" id="message" placeholder="..."></textarea>
 
                 </article>
-
+                
                 <article class="actividadMain">
-                    <textarea class="textActividad test" id="actividad1" placeholder="Actividad 1"></textarea>
+                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea>
+                    <button id="bt" >nueva actividad</button>
+                    
                 </article>
-
+                    
+                
 
             </section><!-- end of main -->
         </div><!-- end of wrapper -->

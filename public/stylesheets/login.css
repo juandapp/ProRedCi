@@ -258,6 +258,7 @@ form:after {
 
 
 #register p{
+    float: left;
     color: #7E7E7E;
     font-family: Helvetica, Arial, sans-serif;
     letter-spacing: -0.05em;
@@ -280,3 +281,26 @@ form:after {
     background-color: #CCC;
 }
 
+
+#registerForm {
+    width: 66%;
+    padding: 0 40px; 
+}
+
+
+.registerDiv {
+    float: left;
+    width: 100%;
+}
+
+
+#registerForm h5 {
+    float: left;
+    /*width: 50%;*/
+}
+
+
+#registerForm input {
+    float: right;
+    width: 50%;
+}

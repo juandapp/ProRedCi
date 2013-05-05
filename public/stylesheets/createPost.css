@@ -26,7 +26,13 @@ textarea {
 
 .actividadMain {
     width: 100%;
-    max-width: 70%;
+    max-width: 60%;
+    
+}
+
+.test {
+    
+    height: 5%;
 }
 
 
@@ -53,4 +59,3 @@ input:focus, textarea:focus {
 	-moz-border-radius: 5px;  
 	-webkit-border-radius: 5px;  
 }
-
