@@ -117,49 +117,10 @@
                     </div>
                 </article>
 
-                <article class="posts">
-
-                    <h2>Posts</h2>
-
-                    <nav>
-                        <div class="menu">
-
-                            <ul>
-
-                                <li><a href="#">Fecha</a>
-
-                                    <ul>
-                                        <li><a href="#">Up-Down</a></li>
-                                        <li><a href="#">Down-Up</a></li>
-                                    </ul>
-
-                                </li>
-
-                                <li><a href="#">Rating</a></li>
-
-                                <li><a href="#">Visitas</a></li>
-
-                            </ul>
-
-                        </div>
-                    </nav>
-
-
-                    <div id="postList">
-
-
-
-                    </div><!-- post list -->
-
-
-                </article><!-- posts -->
-
-
-
                 <aside id="createPost">
                     <div>
                         <form action="index.php?proceso" method="post">
-                            <input type="submit" value="Crear Post" />
+                            <input type="submit" value="Crear Proc" />
                         </form>
                     </div>
                 </aside><!-- Crear Post -->

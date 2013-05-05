@@ -25,7 +25,7 @@ class Proceso_Controller {
         } else if (isset($getVars['registrar'])) {
 
             $user_idUser = $session->user_id;
-            $name = $_POST['name'];
+            $name = htmlentities("Cómo ", ENT_QUOTES,'UTF-8').$_POST['name'];
             $description = "";
             if (isset($_POST['description'])) {
                 $description = $_POST['description'];
