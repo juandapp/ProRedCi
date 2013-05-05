@@ -1,15 +1,18 @@
 <?php
 
-class Tag {
+class Proceso_Model {
 
-    private $idTag;
+    private $idProces;
+    private $user_idUser;
+    private $place_idPlace;
     private $name;
+    private $description;
     private $creation_date;
+    private $positive_califications;
+    private $negative_califications;
+    private $estimated_duration;
 
-    public function __construct($name = "") {
-        $this->name = $name;
-    }
-
+    
     public function __set($name, $value) {
         $this->$name = $value;
     }
@@ -30,7 +33,7 @@ class Tag {
     
     public function save($database) {
         $sql = "INSERT INTO tag (name) VALUES ";
-        $sql .= "('" . $this->name . "','" . $this->last_name . "','" . $this->email . "','" . $this->username . "','" . $this->password . "')";
+        $sql .= "('" . $this->name . "'')";
         $result_set = $database->query($sql);
     }
         
