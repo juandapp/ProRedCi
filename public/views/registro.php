@@ -11,7 +11,7 @@
 
     </head>
     <body>
-        
+
         <nav id="mainMenu">
             <div class="menu">
 
@@ -33,39 +33,45 @@
                 </ul>
             </div>
         </nav>
-        
-        
+
+
         <div id="wrapper">
             <section id="main">
 
                 <article id="register" class="login">
-                    <form action="index.php?registro&registrar" method="post">
-                        <h3>Registro</h3>
-                        <div>
+                    <h3>Registro</h3>
+
+                    <form id="registerForm" action="index.php?registro&registrar" method="post">
+
+                        <div class="registerDiv" >
                             <h5 id="labelNombre">Nombres</h5>
                             <input type="text" required="" name="name" id="name" />
                         </div>
 
-                        <div>
+                        <div class="registerDiv" >
                             <h5>Apellidos</h5>
                             <input type="text" required="" name="lastname" id="lastname" />
                         </div>
-                        <div>
+
+                        <div class="registerDiv" >
                             <h5>e-mail</h5>
                             <input type="text" placeholder="example@example.com" required="" name="email" id="email" />
                         </div>
-                        <div id="divUsername">
+
+                        <div class="registerDiv" id="divUsername">
                             <h5>Nick de usuario</h5>
                             <input type="text" required="" name="username" id="username" />
                         </div>
-                        <div>
+
+                        <div class="registerDiv">
                             <h5>Contrase&ntilde;a</h5>
                             <input type="password" placeholder="Password" required="" name="password" id="password" />
                         </div>
-                        <div>
-                            <input type="submit" value="Registrarse" name="register" />
-                        </div>
+
+                        <input type="submit" value="Registrarse" name="register" />
+
                     </form>
+
                 </article><!-- close register -->
             </section><!-- close main -->
         </div><!-- close wrapper -->
