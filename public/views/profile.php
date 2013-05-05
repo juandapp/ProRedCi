@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Tramitalo - Perfil</title>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/profile.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 

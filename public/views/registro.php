@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title> The Process Network </title>
+        <title>Tramitalo - Registro</title>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/login.css">
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>

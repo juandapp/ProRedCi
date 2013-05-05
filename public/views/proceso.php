@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Tramitalo - Crear Proceso</title>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/createPost.css">
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
