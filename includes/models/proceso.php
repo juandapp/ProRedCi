@@ -33,13 +33,21 @@ class Proceso_Model {
         return $array['idProces'];
     }
 
+    public static function find_process_by_tag($database, $tag) {
+        $sql = "SELECT p.name, p.description, p.positive_califications, p.negative_califications FROM process p 
+INNER JOIN proces_has_tag pt ON p.idProces = pt.Proces_idProces
+INNER JOIN tag t ON pt.tag_idtag = t.idtag WHERE t.name = '" . $tag . "' ORDER BY p.positive_califications DESC";
+        $result_array = self::find_by_sql($database, $sql);
+        return $result_array;
+    }
+
     public static function find_top_five($database) {
         $result_array = self::find_by_sql($database, "SELECT name,description,positive_califications,negative_califications FROM process ORDER BY positive_califications DESC LIMIT 5");
         return $result_array;
     }
-    
+
     public static function find_process_by_userid($database, $user_idUser) {
-        $result_array = self::find_by_sql($database, "SELECT name,description,positive_califications,negative_califications FROM process WHERE user_idUser = ".$user_idUser." ORDER BY positive_califications DESC");
+        $result_array = self::find_by_sql($database, "SELECT name,description,positive_califications,negative_califications FROM process WHERE user_idUser = " . $user_idUser . " ORDER BY positive_califications DESC");
         return $result_array;
     }
 
