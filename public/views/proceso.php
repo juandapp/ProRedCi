@@ -11,7 +11,7 @@
 
         <nav id="mainMenu">
             <div class="menu">
-                <a class="navIcon" href="../index.php"><img title="Index" alt="Index" src="../images/home.png" width="22" height="22"/></a>
+                <a class="navIcon" href="index.php"><img title="Index" alt="Index" src="public/images/home.png" width="22" height="22"/></a>
                 <div class="navVerticalDivision"></div>
                 <div class="navLeftItem">
                     <form method="get" action="/search" id="search">
@@ -25,11 +25,11 @@
                     <div class="navVerticalDivision"></div>
 
                     <a class="navIcon" href="#">
-                        <img title="Configuracion" alt="Configuracion" src="../images/settings.png" width="22" height="22" /></a>
+                        <img title="Configuracion" alt="Configuracion" src="public/images/settings.png" width="22" height="22" /></a>
 
                     <div class="navVerticalDivision"></div>
 
-                    <a class="navIcon" href="logout.php"><img title="Salir" alt="Salir" src="../images/logout.png" width="22" height="22" /></a>
+                    <a class="navIcon" href="logout.php"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
 
                 </div>
 
@@ -43,10 +43,10 @@
 
                     <div id="avatar">
 
-                        <h2><?php echo $data['nombre']; ?> </h2>				<!-- seek with php-->
+                        <h2><?php echo $data['nombre']; ?>  </h2>				<!-- seek with php-->
                         <br/>
                         <span class="avatarImage" >
-                            <img src="../images/user.png">
+                            <img src="public/images/user.png">
                         </span>
                         <br/><br/>
                     </div>
@@ -55,9 +55,9 @@
                     <div id="userOptions">
 
                         <h3>Num. Posts</h3>
-                        <p>xxxxxxx</p>					<!-- seek with php-->
-                        <h3>Fecha de Creaci&oacute;n</h3>
-                        <p>xx-xx-xxxx</p>				<!-- seek with php-->
+                        <p><?php echo $data['numPost']; ?></p>					<!-- seek with php-->
+                        <h3>Usuario Desde</h3>
+                        <p><?php echo $data['fechaCreacion']; ?></p>				<!-- seek with php-->
                         <br/>
                         <div>
                             <input type="submit" value="Editar Perfil" />
@@ -90,11 +90,14 @@
                     <textarea class="textArea" id="message" placeholder="..."></textarea>
 
                 </article>
-
+                
                 <article class="actividadMain">
-                    <textarea class="textActividad test" id="actividad1" placeholder="Actividad 1"></textarea>
+                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea>
+                    <button id="bt" >nueva actividad</button>
+                    
                 </article>
-
+                    
+                
 
                 <section><!-- end of main -->
                     </div><!-- end of wrapper -->
@@ -108,4 +111,4 @@
                         </div>
                     </footer>
                     </body>
-                    </html>
+</html>
