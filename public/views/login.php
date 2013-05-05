@@ -33,7 +33,7 @@
                     </form>
                 </div>
 
-                
+
             </div>
         </nav>
 
@@ -67,15 +67,18 @@
                 <article>
                     <h2>Informate</h2>
                     <div id="accordion">
-                        <h3>First header</h3>
+                        <h3>Como Sacar La Libreta Militar<samp class="likes">
+                                <img src="public/images/like.png"><p>200</p>
+                                <img src="public/images/dislike.png"><p>300</p></samp>
+                        </h3>
                         <div> </div>
+                        <h3>Como autorizar una formula Medica en la Nueva EPS</h3>
+                        <div>dfgdggdf</div>
+                        <h3>Como renovar la libreta Militar por perdidad</h3>
+                        <div>Descripcion actividad</div>
                         <h3>Second header</h3>
                         <div>Second content panel</div>
-                         <h3>First header</h3>
-                        <div>First content panel</div>
-                        <h3>Second header</h3>
-                        <div>Second content panel</div>
-                         <h3>First header</h3>
+                        <h3>First header</h3>
                         <div>First content panel</div>
                         <h3>Second header</h3>
                         <div>Second content panel</div>
