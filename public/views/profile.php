@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="navRightItem">
-                    <a class="navIcon" href="#">Perfil</a>
+                    <a class="navIcon" href="index?profile">Perfil</a>
 
                     <div class="navVerticalDivision"></div>
 
