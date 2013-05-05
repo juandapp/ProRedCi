@@ -2,7 +2,10 @@
     <head>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/createPost.css">
-        <script type="text/javascript" src="/javascripts/user.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="public/javascripts/proceso.js"></script>
+        
+        
     </head>
     <body>
 
@@ -74,35 +77,30 @@
 
                         <h4>Titulo del post</h4>
                         <input type="text" class="input" size="60" title="Título" dir="ltr">
-
+                        <br></br>
                     </div>
 
                     <div class="titleSeparator"></div>
 
-                    <div id = "userInformation">
-                        <button class="" tabindex="0">Publicar</button>
-                    </div>
                 </div>
 
 
                 <article class="postContent">
-
+                    <h4>Descripcion</h4>
                     <textarea class="textArea" id="message" placeholder="..."></textarea>
 
                 </article>
 
-
-
-                <aside id="createPost">
-                    <div>
-                        <input type="submit" value="Crear Post" />
-                    </div>
-                </aside><!-- Crear Post -->
-
+                <article class="actividadMain">
+                    <div><textarea class="textActividad" id="actividad0" placeholder="Actividad"></textarea></div>
+                </article>
 
 
                 <section><!-- end of main -->
                     </div><!-- end of wrapper -->
+                     <div id = "userInformation">
+                        <button class="" tabindex="0">Publicar</button>
+                    </div>
 
                     <footer>
                         <div id="footerContent">
