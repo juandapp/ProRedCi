@@ -39,7 +39,7 @@ $(document).ready(function()
                 }
 
         ).done(function() {
-            window.location.replace("index.php?profile");
+            //window.location.replace("index.php?profile");
         });
 
     });
@@ -68,8 +68,7 @@ $(document).ready(function()
                 }
 
         ).done(function(msg) {
-            $("#tituloproceso").prop('disabled', true);
-            console.log(msg);
+            window.location.replace("index.php?profile");
         });
         
     });
