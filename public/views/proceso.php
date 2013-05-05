@@ -44,75 +44,50 @@
 
                     <div id="avatar">
 
-                        <h2><?php echo $data['nombre']; ?>  </h2>				<!-- seek with php-->
+                        <h2><?php echo $data['nombre']; ?>  </h2>
                         <br/>
                         <span class="avatarImage" >
                             <img src="public/images/user.png">
                         </span>
                         <br/><br/>
                     </div>
-
-
-                    <div id="userOptions">
-
-                        <h3>Num. Posts</h3>
-                        <p><?php echo $data['numPost']; ?></p>					<!-- seek with php-->
-                        <h3>Usuario Desde</h3>
-                        <p><?php echo $data['fechaCreacion']; ?></p>				<!-- seek with php-->
-                        <br/>
-                        <div>
-                            <input type="submit" value="Editar Perfil" />
-                        </div>
-
-                    </div>
-
                 </aside><!-- user info -->
 
 
+                <article id="crearPost">
 
-                <div class="postTitle">
-                    <div id = "titleSection">
+                    <div class="separator">
+                        <h4 id="h4Titulo">C&oacute;mo</h4>
+                        <input id="tituloproceso" placeholder="verbo + predicado" type="text" class="input" size="60" title="Título" dir="ltr"/>
+                    </div>
 
-                        <h4>Etiquetas</h4>
-                        <div id="etiquetas">
-                        <input type="text" class="input" id="etiqueta1" placeholder="">
+                    <div class="separator">
+                        <textarea class="textArea" id="message" placeholder="Descripcion..."></textarea>
+                    </div>
+
+                    <div id="actividades" class="separator">
+                        <div class="separatorIn">
+                            <h3>1 -</h3> 
+                            <input class="input" id="actividad1" placeholder="Paso 1"/>
                         </div>
-                        <p id="mas">++++</p><p id="menos">----</p>
-
-                        <h4>Titulo del post</h4>
-                        <input id="tituloproceso" type="text" class="input" size="60" title="Título" dir="ltr">
-                        <p id="nombreparrafo">Enviar</p>
-                        <br></br>
                     </div>
 
-                    <div class="titleSeparator"></div>
-
-                </div>
-
-
-                <article class="postContent">
-                    <h4>Descripcion</h4>
-                    <textarea class="textArea" id="message" placeholder="..."></textarea>
-
-                </article>
-                
-                <article class="actividadMain">
-                    <h5>Actividad: 1</h5>
-                    <div id="actividades">
-                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea><br></br>
+                    <div class="separator">
+                        <button id="btAgregar" >+</button>
+                        <button id="btEliminar" >-</button>
                     </div>
-                    <button id="btAgregar" >nueva actividad</button>
-                    <button id="btEliminar" >eliminar actividad</button>
-                    
-                </article>
-                    
-                
+
+                    <div class="separator">
+                        <h4>Etiquetas</h4>
+                        <input type="text" class="test" id="etiqueta1" placeholder=""/>
+                        <p>separe las etiquetas con comas</p>
+                    </div>
+
+                    <button id="hecho">Hecho</button>
+                </article><!-- close Crear Post -->
 
             </section><!-- end of main -->
         </div><!-- end of wrapper -->
-        <div id = "userInformation">
-            <button class="" tabindex="0">Publicar</button>
-        </div>
 
         <footer>
             <div id="footerContent">

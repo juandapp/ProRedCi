@@ -3,8 +3,9 @@ $(document).ready(function()
     var i = 2;
 
     $("#btAgregar").click(function() {
-        $("#actividades").append('<h5>Actividad: ' + i + '</h5>\n\
-<textarea class="test" id="actividad' + i + '" placeholder="Actividad ' + i + '"></textarea></div><br></br>');
+//        $("#actividades").append('<h5>Actividad: ' + i + '</h5>\n\
+//<textarea class="test" id="actividad' + i + '" placeholder="Actividad ' + i + '"></textarea></div><br></br>');
+        $("#actividades").append('<div class="separatorIn"><h3>' + i + ' -</h3><input class="input" id="actividad' + i + '" placeholder="Paso ' + i + '"/></div>');
         i++;
     });
 
@@ -19,9 +20,9 @@ $(document).ready(function()
 //    });
 
     $("#btEliminar").click(function() {
-        if(i>2){
-        $("#actividades textarea:last").remove();
-        i--;
+        if (i > 2) {
+            $("#actividades div:last").remove();
+            i--;
         }
     });
 

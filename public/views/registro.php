@@ -61,6 +61,10 @@
                             <h5>Contrase&ntilde;a</h5>
                             <input type="password" placeholder="Password" required="" name="password" id="password" />
                         </div>
+                        
+                        <div id="errorData">
+                            
+                        </div>
 
                         <input type="submit" value="Registrarse" name="register" />
 

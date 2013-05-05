@@ -12,7 +12,14 @@ $(document).ready(function() {
                     var newParrafo = document.createElement("p");
                     newParrafo.appendChild(document.createTextNode(msg));
 //                        $("#divUsername").append('<p>'+msg+'</p>');
-                    $("#divUsername").append(newParrafo);
+                    //$("#divUsername").append(newParrafo);
+                    
+                    if (msg == "si usar") {
+                        $("#username").css("background-color", "#72BF56");
+                    } else {
+                        $("#username").css("background-color", "#FA393D");
+                    }
+                        
                 });
 
             }
