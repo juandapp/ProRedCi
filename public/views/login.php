@@ -84,8 +84,8 @@
 
                 <article id="cajaBusqueda" class="loginArticle">
                     <h2>Realiza tu busqueda</h2>
-                    <form method="get" action="/search" id="loginSearch">
-                        <input name="q" type="text" size="40" placeholder="Buscar..." />
+                    <form method="post" action="index.php?busqueda" id="Busquedas">
+                        <input name="busqueda" type="text" size="40" placeholder="Buscar..." />
                     </form>
                 </article>
                 

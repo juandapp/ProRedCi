@@ -3,9 +3,19 @@
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/createPost.css">
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script type="text/javascript" src="public/javascripts/proceso.js"></script>
         <script type="text/javascript" src="public/javascripts/jquery.sheepItPlugin-1.1.1.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>  
+        <script type="text/javascript" src="public/javascripts/proceso.js"></script>
+        
+        <script>
+            $(function() {
+                $("#dialog").dialog();
+            });
 
+        </script>
 
     </head>
     <body>
@@ -21,17 +31,7 @@
                 </div -->
 
                 <div class="navRightItem">
-                    <a class="navIcon" href="index.php?profile">Perfil</a>
-
-                    <div class="navVerticalDivision"></div>
-
-                    <a class="navIcon" href="#">
-                        <img title="Configuracion" alt="Configuracion" src="public/images/settings.png" width="22" height="22" /></a>
-
-                    <div class="navVerticalDivision"></div>
-
-                    <a class="navIcon" href="index.php?profile&logout"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
-
+                    
                 </div>
 
             </div>
@@ -44,7 +44,7 @@
 
 
                 <article id="crearPost">
-                    <h2>Top 5</h2>
+                    <h2>Resultado de B&uacute;squeda Tag : <?php echo $_POST['busqueda'] ?></h2>
                     <div id="accordion">
                         <?php
                         $nProcesos = $data["nProcesos"];

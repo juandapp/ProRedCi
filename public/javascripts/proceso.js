@@ -1,5 +1,9 @@
 $(document).ready(function()
 {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+    
     var nActividades = 1;
 
     $("#btAgregar").click(function() {
