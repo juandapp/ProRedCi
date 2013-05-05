@@ -6,11 +6,20 @@ $(document).ready(function()
     
     
     var i = 2;
-    $("#bt").click(function() {
-        $(this).before('<div value="mmm"><textarea class="test" placeholder="Actividad ' + i + '"></textarea></div>');
+    $("#btAgregar").click(function() {
+        $(this).before('<h5>Actividad: '+i+'</h5><textarea class="test" id="actividad1" placeholder="Actividad ' + i + '"></textarea></div><br></br>');
         i++;
     });
     
+    $("#btEliminar").click(function() {
+        act = document.getElementById('actividad1');	
+	if (!act){
+		alert("El elemento selecionado no existe");
+	} else {
+		padre = act.parentNode;
+		padre.removeChild(act);
+	}
+    });
     
     $("#mas").click(function() {
         console.log($("#etiquetas input:last").attr("class"));
