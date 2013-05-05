@@ -80,7 +80,8 @@
                         <p id="mas">++++</p><p id="menos">----</p>
 
                         <h4>Titulo del post</h4>
-                        <input type="text" class="input" size="60" title="Título" dir="ltr">
+                        <input id="tituloproceso" type="text" class="input" size="60" title="Título" dir="ltr">
+                        <p id="nombreparrafo">Enviar</p>
                         <br></br>
                     </div>
 
@@ -97,7 +98,9 @@
                 
                 <article class="actividadMain">
                     <h5>Actividad: 1</h5>
+                    <div id="actividades">
                     <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea><br></br>
+                    </div>
                     <button id="btAgregar" >nueva actividad</button>
                     <button id="btEliminar" >eliminar actividad</button>
                     

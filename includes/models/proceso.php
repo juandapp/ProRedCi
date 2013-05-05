@@ -12,6 +12,12 @@ class Proceso_Model {
     private $negative_califications;
     private $estimated_duration;
 
+//    function __construct($user_idUser, $name, $description, $estimated_duration) {
+//        $this->user_idUser = $user_idUser;
+//        $this->name = $name;
+//        $this->description = $description;
+//        $this->estimated_duration = $estimated_duration;
+//    }
     
     public function __set($name, $value) {
         $this->$name = $value;
@@ -19,6 +25,12 @@ class Proceso_Model {
 
     public function __get($name) {
         return $this->$name;
+    }
+    
+    public function save($database) {
+        $sql = "INSERT INTO process (user_idUser, name, description, estimated_duration) VALUES ";
+        $sql .= "(" . $this->user_idUser . ",'" . $this->name . "','" . $this->description . "','" . $this->estimated_duration . "')";
+        $result_set = $database->query($sql);
     }
    
     public static function find_top_five($database) {
@@ -30,12 +42,7 @@ class Proceso_Model {
 //        $result_array = self::find_by_sql($database,"SELECT * FROM tag WHERE idTag='{$id}' LIMIT 1");
 //        return !empty($result_array) ? array_shift($result_array) : false;
 //    }
-//    
-//    public function save($database) {
-//        $sql = "INSERT INTO tag (name) VALUES ";
-//        $sql .= "('" . $this->name . "'')";
-//        $result_set = $database->query($sql);
-//    }
+
         
     public static function find_by_sql($database, $sql = "") {
         $result_set = $database->query($sql);
