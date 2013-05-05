@@ -53,6 +53,25 @@ class Proceso_Controller {
             }
             
             
+            $etiquetas = explode(",",  strtolower($_POST['etiqueta']));
+            
+            foreach ($etiquetas as $etiqueta){
+                echo "la etiqueta para buscar ".$etiqueta ;
+                $tag = Tag_Model::find_by_name($database, $etiqueta);
+                if($tag){
+                    $idTag = $tag->idtag;
+                    echo 'en true if antes de guardar';
+                    Proceso_Model::at_tag_to_process($database, $idTag,  $process->idProces);
+                }else{
+                    Tag_Model::save_name($database, $etiqueta);
+                    $Tag=Tag_Model::find_by_name($database, $etiqueta);
+                    $tagId = $Tag->idtag;
+                    Proceso_Model::at_tag_to_process($database, $tagId,  $process->idProces);
+                }
+            }
+            
+            
+            
         }
         $database->close_connection();
     }

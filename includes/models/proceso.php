@@ -26,6 +26,13 @@ class Proceso_Model {
         $result_set = $database->query($sql);
     }
 
+    public static function at_tag_to_process($database, $idTag, $idProcess) {
+        $sql = "INSERT INTO proces_has_tag (Proces_idProces, tag_idtag) VALUES ";
+        $sql .= "(" . $idProcess . "," . $idTag . ")";
+        echo $sql;
+        $result_set = $database->query($sql);
+    }
+
     public static function get_id_of_last_inserted($database, $user, $name) {
         $sql = "SELECT idProces FROM process WHERE user_idUser = " . $user . " AND name = '" . $name . "' ORDER BY idProces DESC lIMIT 1";
         $result_set = $database->query($sql);
