@@ -65,23 +65,38 @@
                 </aside><!-- close login -->
 
                 <article>
-                    <h2>Informate</h2>
+                    <h2>Top 5</h2>
                     <div id="accordion">
-                        <h3>Como Sacar La Libreta Militar<samp class="likes">
-                                <img src="public/images/like.png"><p>200</p>
-                                <img src="public/images/dislike.png"><p>300</p></samp>
+                        <h3><?php echo $data['PostName1']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost1']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost1']; ?></p></samp>
                         </h3>
-                        <div> </div>
-                        <h3>Como autorizar una formula Medica en la Nueva EPS</h3>
-                        <div>dfgdggdf</div>
-                        <h3>Como renovar la libreta Militar por perdidad</h3>
-                        <div>Descripcion actividad</div>
-                        <h3>Second header</h3>
-                        <div>Second content panel</div>
-                        <h3>First header</h3>
-                        <div>First content panel</div>
-                        <h3>Second header</h3>
-                        <div>Second content panel</div>
+                        <div><?php echo $data['Description1']; ?></div>
+                        
+                        <h3><?php echo $data['PostName2']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost2']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost2']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description2']; ?></div>
+                        
+                        <h3><?php echo $data['PostName3']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost3']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost3']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description3']; ?></div>
+                        
+                        <h3><?php echo $data['PostName4']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost4']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost4']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description4']; ?></div>
+                        
+                        <h3><?php echo $data['PostName5']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost5']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost5']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description5']; ?></div>
+
                     </div>
                 </article>
 
