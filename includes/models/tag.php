@@ -2,7 +2,7 @@
 
 class Tag_Model {
 
-    private $idTag;
+    private $idtag;
     private $name;
     private $creation_date;
 
@@ -20,17 +20,26 @@ class Tag_Model {
     
     
     public static function find_by_name($database, $name = 0) {
-        $result_array = self::find_by_sql($database, "SELECT * FROM tag WHERE name='{$name}' LIMIT 1");
+        $sql = "SELECT * FROM tag WHERE name='{$name}' LIMIT 1";
+        echo 'find by sql '.$sql;
+        $result_array = self::find_by_sql($database, $sql);
         return !empty($result_array) ? array_shift($result_array) : false;
     }
     public static function find_by_id($database,$id = 0) {
-        $result_array = self::find_by_sql($database,"SELECT * FROM tag WHERE idTag='{$id}' LIMIT 1");
+        $sql ="SELECT * FROM tag WHERE idTag={$id} LIMIT 1";
+        echo 'find by id '.$sql;
+        $result_array = self::find_by_sql($database,$sql);
         return !empty($result_array) ? array_shift($result_array) : false;
+    }
+    public static function save_name($database, $name) {
+        $sql = "INSERT INTO tag (name) VALUES ";
+        $sql .= "('" . $name . "')";
+        $result_set = $database->query($sql);
     }
     
     public function save($database) {
         $sql = "INSERT INTO tag (name) VALUES ";
-        $sql .= "('" . $this->name . "'')";
+        $sql .= "('" . $this->name . "')";
         $result_set = $database->query($sql);
     }
         
