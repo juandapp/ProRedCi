@@ -9,8 +9,8 @@ class Busqueda_Controller {
     public function main(array $getVars) {
         $session = new Session();
         $database = new MySQLDatabase();
-        if (isset($getVars['busqueda'])) {
-            $tag = $getVars['busqueda'];
+        if (empty($getVars)) {
+            $tag = $_POST['busqueda'];
             $procesosBusqueda = Proceso_Model::find_process_by_tag($database, $tag);
             $view = new View_Model($this->template);
             $i = 1;
