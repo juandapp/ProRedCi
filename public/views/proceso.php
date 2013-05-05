@@ -30,7 +30,7 @@
 
                     <div class="navVerticalDivision"></div>
 
-                    <a class="navIcon" href="logout.php"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
+                    <a class="navIcon" href="index.php?profile&logout"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
 
                 </div>
 
@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="separator">
-                        <textarea class="textArea" id="message" placeholder="Descripcion..."></textarea>
+                        <textarea class="textArea" id="descripcion" placeholder="Descripcion..."></textarea>
                     </div>
 
                     <div id="actividades" class="separator">
@@ -79,7 +79,7 @@
 
                     <div class="separator">
                         <h4>Etiquetas</h4>
-                        <input type="text" class="test" id="etiqueta1" placeholder=""/>
+                        <input type="text" class="test" id="etiqueta" placeholder=""/>
                         <p>separe las etiquetas con comas</p>
                     </div>
 

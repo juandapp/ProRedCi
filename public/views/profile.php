@@ -2,7 +2,13 @@
     <head>
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/profile.css">
-        <script type="text/javascript" src="/javascripts/user.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript" src="public/javascripts/profile.js"></script>
+
+
+
     </head>
     <body>
 
@@ -63,7 +69,53 @@
 
                 </aside><!-- user info -->
 
+                <article>
+                    <h2>Top 5</h2>
+                    <div id="accordion">
+                        <?php
+                        $nProcesos = $data["nProcesos"];
+                        for ($i = 1; $i <= $nProcesos; $i++) {
+                            ?> 
+                            <h3><?php echo $data['PostName' . $i]; ?><samp class="likes">
+                                    <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost' . $i]; ?></p>
+                                    <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost'.$i]; ?></p></samp>
+                            </h3>
+                            <div><?php echo $data['Description' . $i]; ?></div>
 
+                        <?php } ?> <!--  end for-->
+
+
+
+
+
+
+
+    <!--                        <h3><?php echo $data['PostName2']; ?><samp class="likes">
+                                    <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost2']; ?></p>
+                                    <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost2']; ?></p></samp>
+                            </h3>
+                            <div><?php echo $data['Description2']; ?></div>
+
+                            <h3><?php echo $data['PostName3']; ?><samp class="likes">
+                                    <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost3']; ?></p>
+                                    <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost3']; ?></p></samp>
+                            </h3>
+                            <div><?php echo $data['Description3']; ?></div>
+
+                            <h3><?php echo $data['PostName4']; ?><samp class="likes">
+                                    <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost4']; ?></p>
+                                    <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost4']; ?></p></samp>
+                            </h3>
+                            <div><?php echo $data['Description4']; ?></div>
+
+                            <h3><?php echo $data['PostName5']; ?><samp class="likes">
+                                    <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost5']; ?></p>
+                                    <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost5']; ?></p></samp>
+                            </h3>
+                            <div><?php echo $data['Description5']; ?></div>-->
+
+                    </div>
+                </article>
 
                 <article class="posts">
 
