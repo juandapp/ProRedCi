@@ -5,12 +5,12 @@
         <link rel='stylesheet' href="public/stylesheets/style.css">
         <link rel='stylesheet' href="public/stylesheets/login.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
-        <script src="http://malsup.github.com/jquery.form.js"></script> 
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>  
         <script src="public/javascripts/login.js"></script>
 
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        
 
         <script>
             $(function() {
@@ -64,6 +64,7 @@
                             <input type="submit" value="Login" name="login" />
                         </div>
                     </form>
+                    <p id="errorlogin"></p>
                     <a href="index.php?registro">si no tienes cuenta, registrate \(^.^)/</a>
                 </aside><!-- close login -->
 

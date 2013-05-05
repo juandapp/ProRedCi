@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+console.log("msg");
     $("#loginform").ajaxForm({success: function(msg) {
             if(msg == "valido"){
                 console.log(msg);
