@@ -60,6 +60,7 @@
                             <input type="submit" value="Login" name="login" />
                         </div>
                     </form>
+
                     <p id="errorlogin"></p>
                     <a href="index.php?registro">si no tienes cuenta, registrate \(^.^)/</a>
                 </aside><!-- close login -->
@@ -72,25 +73,25 @@
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost1']; ?></p></samp>
                         </h3>
                         <div><?php echo $data['Description1']; ?></div>
-                        
+
                         <h3><?php echo $data['PostName2']; ?><samp class="likes">
                                 <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost2']; ?></p>
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost2']; ?></p></samp>
                         </h3>
                         <div><?php echo $data['Description2']; ?></div>
-                        
+
                         <h3><?php echo $data['PostName3']; ?><samp class="likes">
                                 <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost3']; ?></p>
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost3']; ?></p></samp>
                         </h3>
                         <div><?php echo $data['Description3']; ?></div>
-                        
+
                         <h3><?php echo $data['PostName4']; ?><samp class="likes">
                                 <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost4']; ?></p>
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost4']; ?></p></samp>
                         </h3>
                         <div><?php echo $data['Description4']; ?></div>
-                        
+
                         <h3><?php echo $data['PostName5']; ?><samp class="likes">
                                 <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost5']; ?></p>
                                 <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost5']; ?></p></samp>
