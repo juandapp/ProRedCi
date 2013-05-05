@@ -73,11 +73,11 @@
 
                     <h2>Informate</h2>
                     <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <a href="#"><h5>Tramites con el Ejercito Nacional</h5></a>
                         <p>pequenia descripcion acerca del problema</p>
                     </div>
                     <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
+                        <a href="#"><h5>Procesos con la EPS</h5></a>
                         <p>pequenia descripcion acerca del problema</p>
                     </div>
                     <div class="listInformacion">
