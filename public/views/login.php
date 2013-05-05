@@ -47,8 +47,8 @@
             <div id="banner">
                 <h1>Tramitalo...</h1>
                 <h4>un portal para la construcci&oacute;n de un conocimiento colectivo <br/>
-                    en tramites administrativos, judiciales, comerciales, economicos y sociales<br/>
-                    de la ciudad</h4>   
+                    en tramites administrativos, judiciales, comerciales, econ&oacute;micos y sociales<br/>
+                    de la ciudad de Cali</h4>   
             </div>
         </header>
 
