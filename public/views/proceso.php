@@ -11,7 +11,7 @@
 
         <nav id="mainMenu">
             <div class="menu">
-                <a class="navIcon" href="index.php"><img title="Index" alt="Index" src="../images/home.png" width="22" height="22"/></a>
+                <a class="navIcon" href="index.php"><img title="Index" alt="Index" src="public/images/home.png" width="22" height="22"/></a>
                 <div class="navVerticalDivision"></div>
                 <div class="navLeftItem">
                     <form method="get" action="/search" id="search">
@@ -25,11 +25,11 @@
                     <div class="navVerticalDivision"></div>
 
                     <a class="navIcon" href="#">
-                        <img title="Configuracion" alt="Configuracion" src="../images/settings.png" width="22" height="22" /></a>
+                        <img title="Configuracion" alt="Configuracion" src="public/images/settings.png" width="22" height="22" /></a>
 
                     <div class="navVerticalDivision"></div>
 
-                    <a class="navIcon" href="logout.php"><img title="Salir" alt="Salir" src="../images/logout.png" width="22" height="22" /></a>
+                    <a class="navIcon" href="logout.php"><img title="Salir" alt="Salir" src="public/images/logout.png" width="22" height="22" /></a>
 
                 </div>
 
