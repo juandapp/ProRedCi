@@ -45,7 +45,7 @@
 
         <header id="indexHeader">
             <div id="banner">
-                <h1>Tramit$acute;lo...</h1>
+                <h1>Tramit&aacute;lo...</h1>
                 <h4>un portal para la construcci&oacute;n de un conocimiento colectivo <br/>
                     en tramites administrativos, judiciales, comerciales, economicos y sociales<br/>
                     de la ciudad</h4>   

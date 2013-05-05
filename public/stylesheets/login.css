@@ -101,7 +101,7 @@ form:after {
 }
 
 
-#loginSearch input[type="text"] {
+#Busquedas input[type="text"] {
     background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
     border: 1px solid #d1d1d1;
     font: bold 16px Verdana, Arial, sans-serif;  
@@ -121,7 +121,7 @@ form:after {
     transition: all 0.7s ease 0s;
     }
 
-#loginSearch input[type="text"]:focus {
+#Busquedas input[type="text"]:focus {
     width: 600px;
 }
 
