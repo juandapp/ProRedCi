@@ -92,8 +92,10 @@
                 </article>
                 
                 <article class="actividadMain">
-                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea>
-                    <button id="bt" >nueva actividad</button>
+                    <h5>Actividad: 1</h5>
+                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea><br></br>
+                    <button id="btAgregar" >nueva actividad</button>
+                    <button id="btEliminar" >eliminar actividad</button>
                     
                 </article>
                     
