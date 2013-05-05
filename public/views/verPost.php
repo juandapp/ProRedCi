@@ -14,12 +14,12 @@
         <nav id="mainMenu">
             <div class="menu">
                 <a class="navIcon" href="index.php"><img title="Index" alt="Index" src="public/images/home.png" width="22" height="22"/></a>
-                <!-- div class="navVerticalDivision"></div>
+                <div class="navVerticalDivision"></div>
                 < div class="navLeftItem">
                     <form method="get" action="/search" id="search">
                         <input name="q" type="text" size="40" placeholder="Buscar..." />
                     </form>
-                </div -->
+                </div>
 
                 <div class="navRightItem">
                     <a class="navIcon" href="index.php?profile">Perfil</a>
