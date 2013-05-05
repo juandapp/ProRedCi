@@ -11,7 +11,7 @@ class Proceso_Model {
     private $positive_califications;
     private $negative_califications;
     private $estimated_duration;
-  
+
     public function __set($name, $value) {
         $this->$name = $value;
     }
@@ -19,26 +19,30 @@ class Proceso_Model {
     public function __get($name) {
         return $this->$name;
     }
-    
+
     public function save($database) {
         $sql = "INSERT INTO process (user_idUser, name, description, estimated_duration) VALUES ";
         $sql .= "(" . $this->user_idUser . ",'" . $this->name . "','" . $this->description . "','" . $this->estimated_duration . "')";
         $result_set = $database->query($sql);
     }
-    
-    public static function get_id_of_last_inserted($database, $user, $name){
-        $sql = "SELECT idProces FROM process WHERE user_idUser = ".$user." AND name = '".$name."' ORDER BY idProces DESC lIMIT 1";
-        $result_set=$database->query($sql);
-        $array=$database->fetch_array($result_set);
+
+    public static function get_id_of_last_inserted($database, $user, $name) {
+        $sql = "SELECT idProces FROM process WHERE user_idUser = " . $user . " AND name = '" . $name . "' ORDER BY idProces DESC lIMIT 1";
+        $result_set = $database->query($sql);
+        $array = $database->fetch_array($result_set);
         return $array['idProces'];
     }
 
-        public static function find_top_five($database) {
-        $result_array = self::find_by_sql($database, 
-                "SELECT name,description,positive_califications,negative_califications FROM process ORDER BY positive_califications DESC LIMIT 5");
+    public static function find_top_five($database) {
+        $result_array = self::find_by_sql($database, "SELECT name,description,positive_califications,negative_califications FROM process ORDER BY positive_califications DESC LIMIT 5");
         return $result_array;
     }
-        
+    
+    public static function find_process_by_userid($database, $user_idUser) {
+        $result_array = self::find_by_sql($database, "SELECT name,description,positive_califications,negative_califications FROM process WHERE user_idUser = ".$user_idUser." ORDER BY positive_califications DESC");
+        return $result_array;
+    }
+
     public static function find_by_sql($database, $sql = "") {
         $result_set = $database->query($sql);
         $object_array = array();
@@ -66,6 +70,6 @@ class Proceso_Model {
         return array_key_exists($attribute, $object_vars);
     }
 
-  }
+}
 
 ?>
