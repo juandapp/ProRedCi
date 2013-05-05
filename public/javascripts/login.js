@@ -7,8 +7,8 @@ console.log("msg");
                 window.location.replace("index.php?profile");
             }else{
                 console.log(msg);      
-                $("#errorlogin").text("No Valido");
-                
+                $("#errorlogin").text("Login Incorrecto");
+                $("#loginform").resetForm();
             }
         }});
 });
