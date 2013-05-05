@@ -1,28 +1,17 @@
 $(document).ready(function()
 {
-    var i = 2;
+    var nActividades = 1;
 
     $("#btAgregar").click(function() {
-//        $("#actividades").append('<h5>Actividad: ' + i + '</h5>\n\
-//<textarea class="test" id="actividad' + i + '" placeholder="Actividad ' + i + '"></textarea></div><br></br>');
-        $("#actividades").append('<div class="separatorIn"><h3>' + i + ' -</h3><input class="input" id="actividad' + i + '" placeholder="Paso ' + i + '"/></div>');
-        i++;
+        nActividades++;
+        $("#actividades").append('<div class="separatorIn"><h3>' + nActividades + ' -</h3><input class="input" id="actividad' + nActividades + '" placeholder="Paso ' + nActividades + '"/></div>');
+
     });
 
-//    $("#btEliminar").click(function() {
-//        act = document.getElementById('actividad1');
-//        if (!act) {
-//            alert("El elemento selecionado no existe");
-//        } else {
-//            padre = act.parentNode;
-//            padre.removeChild(act);
-//        }
-//    });
-
     $("#btEliminar").click(function() {
-        if (i > 2) {
+        if (nActividades >= 2) {
             $("#actividades div:last").remove();
-            i--;
+            nActividades--;
         }
     });
 
@@ -36,6 +25,8 @@ $(document).ready(function()
         console.log("menos");
         $("#etiquetas input:last").remove();
     });
+
+
     $("#nombreparrafo").click(function() {
         $.ajax(
                 {
@@ -51,6 +42,36 @@ $(document).ready(function()
 
     });
 
+    $("#hecho").click(function() {
+        
+        var datos = {};
+        
+        datos['name'] = $("#tituloproceso").val();
+        
+        if($("#descripcion").val()){
+            datos['description'] = $("#descripcion").val();
+        }
+        for (var i = 1; i<=nActividades; i++){
+            datos["actividad"+i] = $("#actividad"+i).val();
+        }
+        datos['nActividades'] = nActividades;
+        datos['etiqueta'] = $("#etiqueta").val();
+
+
+        $.ajax(
+                {
+                    url: "index.php?proceso&registrar",
+                    data: datos,
+                    type: "post"
+                }
+
+        ).done(function(msg) {
+            $("#tituloproceso").prop('disabled', true);
+            console.log(msg);
+        });
+
+
+    });
 
 });
 
