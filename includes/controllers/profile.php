@@ -14,12 +14,16 @@ class Profile_Controller {
             $session = new Session();
             $database = new MySQLDatabase();
             $value = User_Model::find_by_id($database, $session->user_id)->name;
-            $database->close_connection();
+            
             $numPost = "10";
-            $fechaCreacion = "20 Mayo";
+            $fechaCreacion = User_Model::find_by_id($database, $session->user_id)->creation_date;
+            $fechaCreacionFormato = date("d-m-Y", strtotime(stripslashes($fechaCreacion)));
+            
+            $database->close_connection();
+            
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
-            $view->assign('fechaCreacion', $fechaCreacion);
+            $view->assign('fechaCreacion', $fechaCreacionFormato);
             $view->assign('numPost', $numPost);
 
         } else if (isset($getVars['logout'])) {
