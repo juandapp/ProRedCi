@@ -8,7 +8,7 @@
 
 
     </head>
-    
+
     <body>
 
         <nav id="mainMenu">
@@ -42,12 +42,12 @@
             <section id="main">
 
                 <aside id="mostrarComentarios">
-                    
+
                     <div class="comentario">
                         <div class="avatarComentario">
                             <img src="public/images/user.png" width="48" height="48">
                         </div>
-                        
+
                         <div class="contComentario">
                             <div class="nickNameComentario">
                                 <h5>Nick Name</h5> <!-- <?php ?> -->
@@ -62,16 +62,16 @@
                                 <p><strong>fecha</strong></p>
                             </div>
                         </div>
-                        
+
                     </div><!-- cierre comentario -->
-                    
+
                     <div class="divDivision"></div>
-                    
+
                     <div id="comentar">
                         <div class="avatarComentario">
                             <img src="public/images/user.png" width="48" height="48">
                         </div>
-                        
+
                         <div class="escribirComentario">
                             <div class="nickNameComentario">
                                 <h5>Nick Name</h5> <!-- <?php ?> -->
@@ -80,21 +80,32 @@
                                 <textarea class="txaComment" id="comment"></textarea>
                             </div>
                         </div>
-                        
+
                     </div><!-- cierre comentar -->
-                    
+
                 </aside><!-- user info -->
 
 
                 <article id="mostrarPost">
                     <div id="headTitulo">
-                        
+                        <h2>C&oacute;mo ganar WWW</h2>
+                        <p><strong>Etiquetas: </strong> <a href="#">www</a>, <a href="#">estudio</a>, <a href="#">cali</a> </p>
                     </div>
-                    
+
+                    <div id="contenidoPost" align="center">
+                        <div id="descripcion">
+                            <h4>Descripci&oacute;n</h4>
+                            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas venenatis dignissim lacus, et vehicula mauris sodales at. 
+                                Nam sed nibh eu nulla dignissim auctor vitae eu massa. Aenean in rutrum ante. 
+                                Mauris porttitor nibh id elit commodo et scelerisque eros convallis. 
+                                Aliquam id magna sed urna scelerisque fringilla id non nibh.</p>
+                        </div>
+                    </div>
+
 
                 </article><!-- close mostrar Post -->
 
-                
+
             </section><!-- end of main -->
         </div><!-- end of wrapper -->
 
