@@ -71,7 +71,7 @@
                 </aside><!-- user info -->
 
                 <article>
-                    <h2>Top 5</h2>
+                    <h2>Mis Registros</h2>
                     <div id="accordion">
                         <?php
                         $nProcesos = $data["nProcesos"];
