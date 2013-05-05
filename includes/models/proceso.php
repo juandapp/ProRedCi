@@ -20,22 +20,22 @@ class Proceso_Model {
     public function __get($name) {
         return $this->$name;
     }
-    
-    
-    public static function find_by_name($database, $name = 0) {
-        $result_array = self::find_by_sql($database, "SELECT * FROM tag WHERE name='{$name}' LIMIT 1");
-        return !empty($result_array) ? array_shift($result_array) : false;
+   
+    public static function find_top_five($database) {
+        $result_array = self::find_by_sql($database, 
+                "SELECT `name`,`description`,`positive_califications`,`negative_califications` FROM process ORDER BY `positive_califications` DESC LIMIT 5");
+        return $result_array;
     }
-    public static function find_by_id($database,$id = 0) {
-        $result_array = self::find_by_sql($database,"SELECT * FROM tag WHERE idTag='{$id}' LIMIT 1");
-        return !empty($result_array) ? array_shift($result_array) : false;
-    }
-    
-    public function save($database) {
-        $sql = "INSERT INTO tag (name) VALUES ";
-        $sql .= "('" . $this->name . "'')";
-        $result_set = $database->query($sql);
-    }
+//    public static function find_by_id($database,$id = 0) {
+//        $result_array = self::find_by_sql($database,"SELECT * FROM tag WHERE idTag='{$id}' LIMIT 1");
+//        return !empty($result_array) ? array_shift($result_array) : false;
+//    }
+//    
+//    public function save($database) {
+//        $sql = "INSERT INTO tag (name) VALUES ";
+//        $sql .= "('" . $this->name . "'')";
+//        $result_set = $database->query($sql);
+//    }
         
     public static function find_by_sql($database, $sql = "") {
         $result_set = $database->query($sql);

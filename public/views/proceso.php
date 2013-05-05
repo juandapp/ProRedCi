@@ -4,6 +4,7 @@
         <link rel='stylesheet' href="public/stylesheets/createPost.css">
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="public/javascripts/proceso.js"></script>
+        <script type="text/javascript" src="public/javascripts/jquery.sheepItPlugin-1.1.1.js"></script>
 
 
     </head>
@@ -20,7 +21,7 @@
                 </div>
 
                 <div class="navRightItem">
-                    <a class="navIcon" href="#">Perfil</a>
+                    <a class="navIcon" href="index.php?profile">Perfil</a>
 
                     <div class="navVerticalDivision"></div>
 
@@ -73,7 +74,10 @@
                     <div id = "titleSection">
 
                         <h4>Etiquetas</h4>
-                        <input type="text" class="input" id="name" placeholder="">
+                        <div id="etiquetas">
+                        <input type="text" class="input" id="etiqueta1" placeholder="">
+                        </div>
+                        <p id="mas">++++</p><p id="menos">----</p>
 
                         <h4>Titulo del post</h4>
                         <input type="text" class="input" size="60" title="Título" dir="ltr">
@@ -92,23 +96,25 @@
                 </article>
                 
                 <article class="actividadMain">
-                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea>
-                    <button id="bt" >nueva actividad</button>
+                    <h5>Actividad: 1</h5>
+                    <textarea class="test" id="actividad1" placeholder="Actividad 1"></textarea><br></br>
+                    <button id="btAgregar" >nueva actividad</button>
+                    <button id="btEliminar" >eliminar actividad</button>
                     
                 </article>
                     
                 
 
-                <section><!-- end of main -->
-                    </div><!-- end of wrapper -->
-                    <div id = "userInformation">
-                        <button class="" tabindex="0">Publicar</button>
-                    </div>
+            </section><!-- end of main -->
+        </div><!-- end of wrapper -->
+        <div id = "userInformation">
+            <button class="" tabindex="0">Publicar</button>
+        </div>
 
-                    <footer>
-                        <div id="footerContent">
-                            <p>Creative Commons 2013, CPQR Univalle</p>
-                        </div>
-                    </footer>
-                    </body>
+        <footer>
+            <div id="footerContent">
+                <p>Creative Commons 2013, CPQR Univalle</p>
+            </div>
+        </footer>
+    </body>
 </html>

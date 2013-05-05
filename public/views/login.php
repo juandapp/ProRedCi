@@ -10,13 +10,13 @@
         <script src="http://malsup.github.com/jquery.form.js"></script>  
         <script src="public/javascripts/login.js"></script>
 
-        
+
 
         <script>
             $(function() {
                 $("#dialog").dialog();
             });
-            
+
         </script>
     </head> 
     <body>
@@ -33,7 +33,7 @@
                     </form>
                 </div>
 
-                
+
             </div>
         </nav>
 
@@ -65,27 +65,38 @@
                 </aside><!-- close login -->
 
                 <article>
+                    <h2>Top 5</h2>
+                    <div id="accordion">
+                        <h3><?php echo $data['PostName1']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost1']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost1']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description1']; ?></div>
+                        
+                        <h3><?php echo $data['PostName2']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost2']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost2']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description2']; ?></div>
+                        
+                        <h3><?php echo $data['PostName3']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost3']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost3']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description3']; ?></div>
+                        
+                        <h3><?php echo $data['PostName4']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost4']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost4']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description4']; ?></div>
+                        
+                        <h3><?php echo $data['PostName5']; ?><samp class="likes">
+                                <img class="likes" src="public/images/like.png"><p class="likes"><?php echo $data['likesPost5']; ?></p>
+                                <img class="likes" src="public/images/dislike.png"><p class="likes"><?php echo $data['DislikesPost5']; ?></p></samp>
+                        </h3>
+                        <div><?php echo $data['Description5']; ?></div>
 
-                    <h2>Informate</h2>
-                    <div class="listInformacion">
-                        <a href="#"><h5>Tramites con el Ejercito Nacional</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>Procesos con la EPS</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
-                    </div>
-                    <div class="listInformacion">
-                        <a href="#"><h5>abuso familiar por parte del esposo</h5></a>
-                        <p>pequenia descripcion acerca del problema</p>
                     </div>
                 </article>
 

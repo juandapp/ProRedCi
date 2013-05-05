@@ -15,10 +15,21 @@ class Login_Controller {
             if ($session->is_logged_in()) {
                 header("Location: index.php?profile");
             } else {
+                $database = new MySQLDatabase();
+                $topfive = Proceso_Model::find_top_five($database);
+                $database->close_connection();
                 $view = new View_Model($this->template);
+
+                $i =1;
+                foreach ($topfive as $process){
+                    $view->assign("PostName".$i, $process->name);
+                    $view->assign("likesPost".$i, $process->positive_califications);
+                    $view->assign("DislikesPost".$i, $process->negative_califications);
+                    $view->assign("Description".$i, $process->description);
+                    $i++;
+                }
             }
-            
-        }else if (isset($getVars['singin'])) {
+        } else if (isset($getVars['singin'])) {
 
             $username = trim($_POST['username']);
             $password = trim($_POST['password']);

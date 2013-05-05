@@ -1,5 +1,6 @@
 $(document).ready(function() {
-console.log("msg");
+
+
     $("#loginform").ajaxForm({success: function(msg) {
             if(msg == "valido"){
                 console.log(msg);
@@ -11,4 +12,9 @@ console.log("msg");
                 $("#loginform").resetForm();
             }
         }});
+    
+    
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
 });
