@@ -11,14 +11,11 @@ class Proceso_Controller {
         if (empty($getVars)) {
             //create a new view and pass it our template
             // si no vienen parametros en el GET se muestra la vista
-            
-            
+                        
             $value = User_Model::find_by_id($database, $session->user_id)->name;
             $numPost = User_Model::find_number_post($database, $session->user_id);
             $fechaCreacion = User_Model::find_by_id($database, $session->user_id)->creation_date;
             $fechaCreacionFormato = date("d-F-Y", strtotime(stripslashes($fechaCreacion)));
-
-            
 
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
@@ -43,6 +40,8 @@ class Proceso_Controller {
             $process->description =$description;
             $process->estimated_duration =$estimated_duration;
             $process->save($database);
+            $process->idProces=  Proceso_Model::get_id_of_last_inserted($database, $user_idUser, $name);
+            
         }
         $database->close_connection();
     }

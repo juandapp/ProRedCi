@@ -43,8 +43,9 @@ $(document).ready(function()
                     type: "post"
                 }
 
-        ).done(function() {
+        ).done(function(msg) {
             $("#tituloproceso").prop('disabled', true);
+            console.log(msg);
         });
 
     });
