@@ -52,7 +52,7 @@
 
                         <h3>Num. Posts</h3>
                         <p><?php echo $data['numPost']; ?></p>					<!-- seek with php-->
-                        <h3>Fecha de Creaci&oacute;n</h3>
+                        <h3>Usuario Desde</h3>
                         <p><?php echo $data['fechaCreacion']; ?></p>				<!-- seek with php-->
                         <br/>
                         <div>
@@ -107,7 +107,7 @@
                 <aside id="createPost">
                     <div>
                         <form action="index.php?proceso" method="post">
-                        <input type="submit" value="Crear Post" />
+                            <input type="submit" value="Crear Post" />
                         </form>
                     </div>
                 </aside><!-- Crear Post -->

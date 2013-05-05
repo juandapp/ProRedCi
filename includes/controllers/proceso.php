@@ -1,4 +1,5 @@
 <?php
+require_once(CONTROLLER_PATH . "session.php");
 class Proceso_Controller {
 
     public $template = 'proceso';
@@ -8,12 +9,25 @@ class Proceso_Controller {
         if (empty($getVars)) {
             //create a new view and pass it our template
             // si no vienen parametros en el GET se muestra la vista
-            $value = "XXXXXXXXX";
+            $session = new Session();
+            $database = new MySQLDatabase();
+            $value = User_Model::find_by_id($database, $session->user_id)->name;
+            $numPost = User_Model::find_number_post($database, $session->user_id);
+            $fechaCreacion = User_Model::find_by_id($database, $session->user_id)->creation_date;
+            $fechaCreacionFormato = date("d-m-Y", strtotime(stripslashes($fechaCreacion)));
+
+            $database->close_connection();
+
             $view = new View_Model($this->template);
             $view->assign('nombre', $value);
+            $view->assign('fechaCreacion', $fechaCreacionFormato);
+            $view->assign('numPost', $numPost);
+            
         } else if (isset($getVars['usernameajax'])) {
             
         }
     }
+
 }
+
 ?>
