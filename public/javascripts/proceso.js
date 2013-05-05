@@ -1,15 +1,14 @@
 $(document).ready(function()
 {
-    $( "#accordion" ).accordion({
-      heightStyle: "content"
-    });
+    
     
     var nActividades = 1;
 
     $("#btAgregar").click(function() {
+        console.log("ash");
         nActividades++;
         $("#actividades").append('<div class="separatorIn"><h3>' + nActividades + ' -</h3><input class="input" id="actividad' + nActividades + '" placeholder="Paso ' + nActividades + '"/></div>');
-
+        
     });
 
     $("#btEliminar").click(function() {
@@ -73,8 +72,11 @@ $(document).ready(function()
             $("#tituloproceso").prop('disabled', true);
             console.log(msg);
         });
-
-
+        
+    });
+    
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
     });
 
 });
