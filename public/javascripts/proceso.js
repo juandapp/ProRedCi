@@ -1,7 +1,8 @@
 $(document).ready(function()
 {
-    $("#actividad0").blur(function(){
-        $(this).parent().hide(400);
+    $(".test:last").blur(function(){
+        $(this).parent().append('<textarea class="textActividad test" placeholder="Actividad 1"></textarea>');
+        console.log("Vamos por aqui");
     });   
 }
 );

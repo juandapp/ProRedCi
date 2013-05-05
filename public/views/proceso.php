@@ -4,8 +4,8 @@
         <link rel='stylesheet' href="public/stylesheets/createPost.css">
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="public/javascripts/proceso.js"></script>
-        
-        
+
+
     </head>
     <body>
 
@@ -92,13 +92,13 @@
                 </article>
 
                 <article class="actividadMain">
-                    <div><textarea class="textActividad" id="actividad0" placeholder="Actividad"></textarea></div>
+                    <textarea class="textActividad test" id="actividad1" placeholder="Actividad 1"></textarea>
                 </article>
 
 
                 <section><!-- end of main -->
                     </div><!-- end of wrapper -->
-                     <div id = "userInformation">
+                    <div id = "userInformation">
                         <button class="" tabindex="0">Publicar</button>
                     </div>
 
