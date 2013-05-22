@@ -8,7 +8,12 @@
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type="text/javascript" src="public/javascripts/profile.js"></script>
 
+<script>
+            $(function() {
+                $("#dialog").dialog();
+            });
 
+        </script>
 
     </head>
     <body>
